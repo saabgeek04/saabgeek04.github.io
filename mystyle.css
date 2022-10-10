@@ -1,13 +1,19 @@
 body {
-    background-color: cadetblue;
+    background-color: #ae96ff;
  margin: 50px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+html {
+    --accent-color: DarkSlateBlue; 
+}
 h1 {
+    background-color: var(--accent-color);
     color: white;
     text-align: center;
     font-size: 50px;
     font-weight: normal;
+    padding: 8px;
+    box-shadow:8px 8px #000;
 
 
 }
@@ -18,7 +24,7 @@ h2 {
     font-weight: normal;
 }
     p {
-    color: darkslategray;
+    color: var(--accent-color);
     font-size: 22px;
     }
 
@@ -28,13 +34,15 @@ h2 {
         background-color: #303030;
         border: 0px solid  #303030;
         text-align: left;
+        box-shadow: 8px 8px #000 ;
+        display: none;
       }
       
       #mydivheader {
         padding: 10px;
         cursor: move;
         z-index: 10;
-        background-color: darkslategray;
+        background-color: var(--accent-color);
         color: #fff;
       }
 
@@ -42,3 +50,16 @@ h2 {
     float: right;
     background-color: tomato;
     color: white;
+}
+
+.button1 {
+    background-color: var(--accent-color);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    box-shadow: 5px 5px #000;
+    cursor:pointer;
+
+}
