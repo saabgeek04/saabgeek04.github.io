@@ -30,20 +30,45 @@ h2 {
     #mydiv {
         position: absolute;
         z-index: 9;
-        background-color: #303030;
-        border: 0px solid  #303030;
-        text-align: left;
+        background-color: #fff;
+        border: 2px solid  #000;
+        text-align: center;
         box-shadow: 8px 8px #000 ;
         display: none;
+        padding: 4px;
       }
       
-      #mydivheader {
+    #mydivheader {
         padding: 10px;
         cursor: move;
         z-index: 10;
         background-color: var(--accent-color);
         color: #fff;
       }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--accent-color);
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+li a:hover
+{
+    background-color:rgb(44, 81, 112) ;
+}
 
 .closebutton {
     float: right;

@@ -6,9 +6,13 @@
     <title>SaabGeek04.com</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="mystyle.css">
-    <button class="button1">Home</button>
-    <button onclick="document.getElementById('mydiv').style.display = 'block'" class="button1" >Car Update</button>
-    <h1>Welcome! Get started by using the menu bar located at the top of the screen.</h1>   
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Saab-Story.html">Saab Story</a></li>
+    </ul>
+    <br>
+    <!--h1>Welcome! Get started by using the menu bar located at the top of the screen.</h1-->   
 </head>
 
 <body>
@@ -18,12 +22,16 @@
     <p>
     Hello World!
     </p>
+
+    <button onclick="document.getElementById('mydiv').style.display = 'block'" class="button1" >Click to show draggable window</button>
     <div id="mydiv">
     <div id="mydivheader">
         move me
         <button onclick="this.parentElement.parentElement.style.display = 'none';" class="closebutton">X</button>
     </div>
-    <img src="saab900iinshed.jpg" alt="">
+    Hello! I'm a draggable window!
+    <br>
+    :)
 </div>
 </body>
 </html>
