@@ -54,11 +54,11 @@ ul {
     background-color: var(--accent-color);
 }
 
-li {
-    float: left;
-}
+
+
 
 li a{
+    float: left;
     display: block;
     padding: 14px 16px;
     text-decoration: none;
@@ -66,6 +66,20 @@ li a{
     text-align: center;
 }
 li a:hover
+{
+    background-color:rgb(44, 81, 112) ;
+}
+
+.navabout{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    float: right;
+    font-weight: none;
+}
+.navabout:hover
 {
     background-color:rgb(44, 81, 112) ;
 }
