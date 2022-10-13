@@ -1,14 +1,14 @@
 body {
-    background-color: #36383d;
+    background-color: #1e1f22;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html {
-    --accent-color:SteelBlue;
+    --accent-color:rgb(70, 101, 180);
     --main-text-color:white;
 
 }
 h1 {
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
     font-size: 40px;
     font-weight: normal;
@@ -16,7 +16,7 @@ h1 {
 
 }
 h2 {
-    color: white;
+    color: var(--main-text-color);
     text-align: left;
     font-size: 50px;
     font-weight: normal;
@@ -62,7 +62,7 @@ li a{
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
 }
 li a:hover
@@ -74,7 +74,7 @@ li a:hover
     display: block;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
     float: right;
     font-weight: none;
@@ -87,12 +87,12 @@ li a:hover
 .closebutton {
     float: right;
     background-color: tomato;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .button1 {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--main-text-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     border: none;
