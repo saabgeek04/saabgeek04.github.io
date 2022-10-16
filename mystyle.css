@@ -100,3 +100,11 @@ li a:hover
     cursor:pointer;
 
 }
+
+.foot-element {
+    display: block;
+    text-align: left;
+    color: var(--accent-color);
+    padding-bottom: 3px;
+
+}
