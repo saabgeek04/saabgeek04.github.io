@@ -3,7 +3,7 @@ body {
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html {
-    --accent-color:rgb(70, 101, 180);
+    --accent-color:#8c5ccc;
     --main-text-color:white;
 
 }
@@ -46,7 +46,7 @@ h2 {
         color: #fff;
       }
 
-ul {
+#top{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -101,10 +101,15 @@ li a:hover
 
 }
 
-.foot-element {
-    display: block;
-    text-align: left;
-    color: var(--accent-color);
-    padding-bottom: 3px;
-
+#bottom {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--accent-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+
