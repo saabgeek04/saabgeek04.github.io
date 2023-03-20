@@ -21,8 +21,14 @@
 
 
 html{
-background-color: black;
-color: aliceblue;
+
+--background-colour:#000;
+--primary-text-colour:#fff;
+--main-accent-colour:#6d57cc;
+
+
+  background-color: var(--background-colour);
+color: var(--primary-text-colour);
 font-family: 'Hubot Sans';
 }
 
