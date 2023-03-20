@@ -1,133 +1,97 @@
-body {
-    background-color: #141929;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
+
+/*Import Github Fonts Mona sans and Hubot Sans*/
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('./fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('./fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  @font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('./fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('./fonts/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+ :root {
+  /*Colouring Varibles*/
+  --background-colour:#181720;
+  --primary-text-colour:#fff;
+  --main-accent-colour:#6d57cc;
+  --main-accent-darker:#55459e;
+ } 
+
 html {
-    --accent-color:#7d6ce0;
-    --main-text-color:white;
+background-color: var(--background-colour);
+color: var(--primary-text-colour);
+font-family: 'Mona Sans';
 }
-h1 {
-    color: var(--main-text-color);
-    text-align: center;
-    font-size: 40px;
-    font-weight: normal;
-    padding: 8px;
 
-}
-h2 {
-    color: var(--main-text-color);
-    text-align: left;
-    font-size: 50px;
-    font-weight: normal;
-}
-    p {
-    color: var(--main-text-color);
-    font-size: 22px;
-    text-align: center;
-    }
-
-    #mydiv {
-        position: absolute;
-        z-index: 9;
-        background-color: #fff;
-        border: 2px solid  #000;
-        text-align: center;
-        box-shadow: 8px 8px #000 ;
-        display: none;
-        padding: 4px;
-      }
-      
-    #mydivheader {
-        padding: 10px;
-        cursor: move;
-        z-index: 10;
-        background-color: var(--accent-color);
-        color: #fff;
-      }
-
-#top{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--accent-color);
+body {
+margin: 0;
 }
 
 
 
 
-li a{
-    float: left;
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: var(--main-text-color);
-    text-align: center;
-}
-li a:hover
-{
-    background-color:var(--accent-hover-color) ;
+/* Flex Container */
+.container {
+  display: flex;
+  background-color:var(--main-accent-colour);
+  padding: 2pt;
 }
 
-.navabout{
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: var(--main-text-color);
-    text-align: center;
-    float: right;
-    font-weight: none;
-}
-.navabout:hover
-{
-    background-color:var(--accent-hover-color) ;
+.container > .navbutton {
+  padding: 10pt;
+  display: block;
+  color: #fff;
+  font-family: 'Mona Sans';
+  text-decoration: none;
+  background-color: var(--main-accent-colour);
+  transition: 120ms ease;
 }
 
-.closebutton {
-    float: right;
-    background-color: tomato;
-    color: var(--main-text-color);
+.container > .navbutton:hover {
+  background-color: var(--main-accent-darker);
+  color: #fff;
+  
+  transform: scale(1.15, 1);
+  box-shadow: 0 0 2px 2px var(--button-border-col);
+  border-radius: 3pt;
+  font-weight: 600;
+
 }
 
-.button1 {
-    background-color: var(--accent-color);
-    color: var(--main-text-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    border: none;
-    padding: 10px;
-    cursor:pointer;
+.container > .navbutton:active {
+  transform: scale(0.97, 1);
+  transition: 0.08s ease;
+  border-radius: 5pt;
+  font-weight: 900;
 }
 
-#bottom 
-{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--accent-color);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-#saabferns{
-    color: #000;
+.topleftlogo{
+  user-select: none;
+  text-decoration: none;
+  font-family: "Hubot Sans";
+  padding: 7pt;
+  padding-right: 16pt;
+  padding-left: 16pt;
+  display: block;
+  color: #fff;
+
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: x-large;
+  transition: 0.08s ease;
 }
 
-#saabstorycontent
-{
-    text-align: center;
-    margin: 20px 350px;
+.topleftlogo:hover{
+  font-weight: 500;
+  transition: 0.08s ease;
 }
-
-#uselessbutton
-{
-    background-color: var(--accent-color);
-}
-
-#uselessbutton:hover
-{
-    filter: brightness(85%);
-    color: #fff;
-}
-
