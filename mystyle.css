@@ -49,16 +49,20 @@ margin: 0;
   font-family: 'Hubot Sans';
   text-decoration: none;
   background-color: var(--main-accent-colour);
+
+  transition: 120ms ease;
 }
 
 .container > a:hover{
   background-color: var(--main-accent-darker);
   color: #fff;
-  animation-name: navbar-buttons;
-  animation-duration: 110ms  ;
+  
+  transform: scale(1.15);
+  box-shadow: 0 0 2px 2px var(--button-border-col);
+
 }
 
-@keyframes navbar-buttons{
-  0% {background-color: var(--main-accent-colour);}
-  100%{background-color: var(--main-accent-darker);}
+.container > a:active{
+  transform: scale(0.97);
+    transition: 0.08s ease;
 }
