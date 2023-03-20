@@ -19,7 +19,7 @@
     font-stretch: 75% 125%;
   }
   
- :root{
+ :root {
   /*Colouring Varibles*/
   --background-colour:#181720;
   --primary-text-colour:#fff;
@@ -27,42 +27,71 @@
   --main-accent-darker:#55459e;
  } 
 
-html{
+html {
 background-color: var(--background-colour);
 color: var(--primary-text-colour);
 font-family: 'Mona Sans';
 }
 
-body{
+body {
 margin: 0;
 }
 
-.container{
+
+
+
+/* Flex Container */
+.container {
   display: flex;
   background-color:var(--main-accent-colour);
+  padding: 2pt;
 }
 
-.container > a{
-  padding: 8pt;
+.container > .navbutton {
+  padding: 10pt;
   display: block;
   color: #fff;
-  font-family: 'Hubot Sans';
+  font-family: 'Mona Sans';
   text-decoration: none;
   background-color: var(--main-accent-colour);
-
   transition: 120ms ease;
 }
 
-.container > a:hover{
+.container > .navbutton:hover {
   background-color: var(--main-accent-darker);
   color: #fff;
   
-  transform: scale(1.15);
+  transform: scale(1.15, 1);
   box-shadow: 0 0 2px 2px var(--button-border-col);
+  border-radius: 3pt;
+  font-weight: 600;
 
 }
 
-.container > a:active{
-  transform: scale(0.97);
-    transition: 0.08s ease;
+.container > .navbutton:active {
+  transform: scale(0.97, 1);
+  transition: 0.08s ease;
+  border-radius: 5pt;
+  font-weight: 900;
+}
+
+.topleftlogo{
+  user-select: none;
+  text-decoration: none;
+  font-family: "Hubot Sans";
+  padding: 7pt;
+  padding-right: 16pt;
+  padding-left: 16pt;
+  display: block;
+  color: #fff;
+
+  font-weight: 800;
+  font-stretch: 125%;
+  font-size: x-large;
+  transition: 0.08s ease;
+}
+
+.topleftlogo:hover{
+  font-weight: 500;
+  transition: 0.08s ease;
 }
