@@ -54,4 +54,11 @@ margin: 0;
 .container > a:hover{
   background-color: var(--main-accent-darker);
   color: #fff;
+  animation-name: navbar-buttons;
+  animation-duration: 110ms  ;
+}
+
+@keyframes navbar-buttons{
+  0% {background-color: var(--main-accent-colour);}
+  100%{background-color: var(--main-accent-darker);}
 }
