@@ -3,10 +3,8 @@ body {
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html {
-    --accent-color:#6c87e0;
+    --accent-color:#7d6ce0;
     --main-text-color:white;
-    --accent-hover-color:#5368ad;
-
 }
 h1 {
     color: var(--main-text-color);
@@ -124,11 +122,12 @@ li a:hover
 
 #uselessbutton
 {
-    background-color: var(--accent-hover-color);
+    background-color: var(--accent-color);
 }
 
 #uselessbutton:hover
 {
-    background-color: #3c4b7a;
+    filter: brightness(85%);
+    color: #fff;
 }
 
