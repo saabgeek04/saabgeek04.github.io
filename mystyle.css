@@ -173,6 +173,7 @@ main{
 
 .trellocard img{
 max-width: 100%;
+border-radius: 10pt;
 }
 
 .trellocard:hover{
