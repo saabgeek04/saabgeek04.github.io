@@ -41,14 +41,14 @@ margin: 0;
 
 
 
-/* Flex Container */
-.container {
+/* Flex navbar */
+.navbar {
   display: flex;
   background-color:var(--main-accent-colour);
   padding: 2pt;
 }
 
-.container > .navbutton {
+.navbar > .navbutton {
   padding: 10pt;
   display: block;
   color: #fff;
@@ -58,7 +58,7 @@ margin: 0;
   transition: 120ms ease;
 }
 
-.container > .navbutton:hover {
+.navbar > .navbutton:hover {
   background-color: var(--main-accent-darker);
   color: #fff;
   
@@ -69,7 +69,7 @@ margin: 0;
 
 }
 
-.container > .navbutton:active {
+.navbar > .navbutton:active {
   transform: scale(0.97, 1);
   transition: 0.08s ease;
   border-radius: 5pt;
@@ -99,8 +99,69 @@ margin: 0;
 
 .card{
   margin: 25pt;
-  padding: 15pt;
+  padding: 20pt;
   padding-top: 3pt;
   background-color:var(--card-background-colour) ;
   border-radius: 10pt;
+  border: 1.5pt;
+  border-color: #4a475e;
+  border-style: solid;
+  transition: 100ms ease;
+
+  max-width: 800pt;
 }
+
+
+  
+/* silly card stuff*/
+.card:hover{
+  transform: scale(1.005, 1.005);
+  transform: 100ms ease;
+  border-color: rgba(200, 255, 0, 0.995);
+}
+
+.card:active{
+  transform: scale(0.993, 0.993);
+}
+
+.blurcard{
+  margin: 25pt;
+  padding: 20pt;
+  padding-top: 3pt;
+  background-color:#6966745a ;
+  backdrop-filter: blur(20px);
+  fill-opacity: 50%;
+  border-radius: 10pt;
+  border: 1.5pt;
+  border-color: #6a687ec8;
+  border-style: solid;
+  transition: 100ms ease;
+
+  max-width: 800pt;
+}
+
+.blurcard:hover{
+  transform: scale(1.005, 1.005);
+  transform: 100ms ease;
+  border-color: rgba(200, 255, 0, 0.995);
+}
+
+.blurcard:active{
+  transform: scale(0.993, 0.993);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+#gallery{
+  min-height: 100vh;
+  background-image: url(carlos-vega-7XbxPUdRtgw-unsplash.jpg) ;
+  background-position: center;
+  background-size: cover;
+} 
+
+
+
+/* big balls*/
