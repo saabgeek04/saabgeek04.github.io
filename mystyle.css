@@ -114,12 +114,12 @@ margin: 0;
 
   
 /* silly card stuff*/
-.card:hover{
+/*.card:hover{
   transform: scale(1.005, 1.005);
   transform: 100ms ease;
   border-color: rgba(200, 255, 0, 0.995);
 }
-
+*/
 .card:active{
   transform: scale(0.993, 0.993);
 }
@@ -139,13 +139,13 @@ margin: 0;
 
   max-width: 800pt;
 }
-
+/*
 .blurcard:hover{
   transform: scale(1.005, 1.005);
   transform: 100ms ease;
   border-color: rgba(200, 255, 0, 0.995);
 }
-
+*/
 .blurcard:active{
   transform: scale(0.993, 0.993);
 }
