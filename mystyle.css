@@ -25,6 +25,7 @@
   --primary-text-colour:#fff;
   --main-accent-colour:#6d57cc;
   --main-accent-darker:#55459e;
+  --card-background-colour:#2b2939;
  } 
 
 html {
@@ -94,4 +95,12 @@ margin: 0;
 .topleftlogo:hover{
   font-weight: 500;
   transition: 0.08s ease;
+}
+
+.card{
+  margin: 25pt;
+  padding: 15pt;
+  padding-top: 3pt;
+  background-color:var(--card-background-colour) ;
+  border-radius: 10pt;
 }
