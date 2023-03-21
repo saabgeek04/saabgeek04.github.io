@@ -134,7 +134,6 @@ margin: 0;
   border-color: #6a687ec8;
   border-style: solid;
   transition: 100ms ease;
-
   max-width: 800pt;
 }
 /*
@@ -159,9 +158,31 @@ main{
 }
 
 .trellocard{
-  background-color: var(--card-background-colour);
-  margin: 8pt;
-  padding: 8pt;
+  margin: 25pt;
+  padding: 20pt;
+  padding-top: 3pt;
+  background-color:var(--card-background-colour) ;
+  border-radius: 10pt;
+  border: 1.5pt;
+  border-color: #6a687ec8;
+  border-style: solid;
+  transition: 100ms ease;
+  max-width: 300pt;
+
+}
+
+.trellocard img{
+max-width: 100%;
+}
+
+.trellocard:hover{
+  transform: scale(1.005, 1.005);
+  transform: 100ms ease;
+  border-color: rgba(200, 255, 0, 0.995);
+}
+.trellocard:active{
+  transform: scale(0.98, 0.98);
+  border-color:rgba(200, 255, 0, 0.995); 
 }
 
 #gallery{
