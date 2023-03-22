@@ -168,6 +168,8 @@ main{
   border-style: solid;
   transition: 100ms ease;
   max-width: 300pt;
+  text-decoration: none;
+  color: #fff;
 
 }
 
@@ -193,6 +195,14 @@ border-radius: 10pt;
   background-size: cover;
 } 
 
+#farleftnavbutton{
+  padding-left: 20pt;
+  font-weight: 600;
+}
 
-
+#farleftnavbutton:hover{
+  font-weight: 800;
+  background-color: rgba(200, 255, 0, 0.995);
+  color: #2b2939;
+}
 /* big balls*/
