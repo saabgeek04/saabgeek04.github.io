@@ -166,8 +166,23 @@
     max-width: 100%;
     border-radius: 10pt;
   }
-  
 
+  .photocard{
+    margin: 25pt;
+    background-color: #6966745a;
+    backdrop-filter: blur(30px);
+    fill-opacity: 50%;
+    max-width: 200pt;
+  }
+  
+  .photocard:active{
+    backdrop-filter: blur(20px);
+  }
+
+  .photocard img{
+    max-width: 100%;
+    border-radius: 10pt;
+  }
   /*Silly Id stuff*/
   #gallery{
     min-height: 100vh;
