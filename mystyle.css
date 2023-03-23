@@ -127,8 +127,8 @@
     max-width: 800pt;
   }
   
-  .boringcard:active{
-    transition: scale(0.993, 0.993);
+  .card:active{
+    transform: scale(0.993, 0.993);
   }
   
   .blurcard{
@@ -156,6 +156,10 @@
   .trellocard:active{
     transform: scale(0.98, 0.98);
     border-color:rgba(200, 255, 0, 0.995); 
+  }
+  .trellocard img{
+    max-width: 100%;
+    border-radius: 10pt;
   }
   
 
