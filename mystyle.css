@@ -41,13 +41,20 @@
    /*Flex spaces*/
    main{
     display: flex;
-    justify-content: center;
     margin-top: 42pt;
   }
 
   .trello{
     display: flex;
     justify-content: flex-start;
+  }
+
+  .gallery{
+   justify-content: flex-start; 
+  }
+
+  .maincontent{
+    justify-content: center;
   }
 
    /* Flex navbar */
