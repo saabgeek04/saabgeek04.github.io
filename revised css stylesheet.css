@@ -126,3 +126,51 @@
     fill-opacity: 50%;
     max-width: 800pt;
   }
+
+  .trellocard{
+    margin: 25pt;
+    background-color:var(--card-background-colour) ;
+    max-width: 300pt;
+    text-decoration: none;
+    color: #fff;
+  
+  }
+
+  .trellocard:hover{
+    transform: scale(1.005, 1.005);
+    transform: 100ms ease;
+    border-color: rgba(200, 255, 0, 0.995);
+  }
+  .trellocard:active{
+    transform: scale(0.98, 0.98);
+    border-color:rgba(200, 255, 0, 0.995); 
+  }
+  
+
+  /*Silly Id stuff*/
+  #gallery{
+    min-height: 100vh;
+    background-image: url(carlos-vega-7XbxPUdRtgw-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+  } 
+  
+  #saab900i{
+    min-height: 100vh;
+    background-image: url(IMG_9887.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #farleftnavbutton{
+    padding-left: 20pt;
+    font-weight: 600;
+  }
+  
+  #farleftnavbutton:hover{
+    font-weight: 800;
+    background-color: rgba(200, 255, 0, 0.995);
+    color: #2b2939;
+  }
+  /* big balls*/
