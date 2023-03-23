@@ -135,9 +135,13 @@
   .blurcard{
     margin: 25pt;
     background-color:#6966745a ;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     fill-opacity: 50%;
     max-width: 800pt;
+  }
+
+  .blurcard:active{
+    backdrop-filter: blur(20px);
   }
 
   .trellocard{
