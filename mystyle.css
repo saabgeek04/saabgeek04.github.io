@@ -46,6 +46,9 @@ margin: 0;
   display: flex;
   background-color:var(--main-accent-colour);
   padding: 2pt;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar > .navbutton {
@@ -150,6 +153,7 @@ margin: 0;
 main{
   display: flex;
   justify-content: center;
+  margin-top: 42pt;
 }
 
 .trello{
@@ -200,6 +204,7 @@ border-radius: 10pt;
   background-image: url(IMG_9887.JPG);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #farleftnavbutton{
