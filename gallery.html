@@ -20,51 +20,35 @@
     </nav>
 
     <main>
-        <ul id="photoboard">
-            <li class="pbitem">
-                <img src="saabatsunset.jpg" alt="">
-            </li>
-            <li class="pbitem">
-                <img src="saabheroimage.jpg" alt="">
-            </li>
-            <li class="pbitem">
-                <img src="saabindriveway.jpg" alt="">
-            </li>
-            <li class="pbitem">
-                <img src="tigerhill.jpg" alt="">
-            </li>
-            <li class="pbitem">
-                <img src="catpfp.jpg" alt="">
-            </li>
-            <!--<li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-            <li>
-                <img src="" alt="">
-            </li>
-        -->
-        </ul>
-
-
+       
     </main>
+    <script>
+        fetch('/gallery.txt')
+            .then(data => data.text())
+            .then(string => {
+                const list = string.split('\n');
+                const element = document.querySelector('main');
+                const col1 = document.createElement('div');
+                const col2 = document.createElement('div');
+                const col3 = document.createElement('div');
 
+                element.appendChild(col1);
+                element.appendChild(col2);
+                element.appendChild(col3);
+
+                const choices = [col1, col2, col3];
+
+                list.forEach((url, index) => {
+                    choices[index % 3].innerHTML += `
+                    <li>
+                        <img src="${url.trim()}">
+                    </li>
+                    `;
+                })
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    </script>
 </body>
 </html>
