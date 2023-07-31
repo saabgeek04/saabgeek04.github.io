@@ -39,14 +39,46 @@ font-family: "Mona Sans";
 body{
 
     background-color: var(--crust);
+    perspective: 1000px;
 
 }
 
-#aboutme {
 
-    background-color: var(--base);
-    color: var(--textmain);
+.fancybarcontainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+.fancybar{
+  display: flex;
+  background-color: var(--base);
+  background-color: var(--base);
+  border-radius: 14pt;
+  border-style: none;
+  padding-left: 8pt;
+  padding-right: 8pt;
+}
 
+.fancybutton {
+  text-decoration: none;
+  color: var(--textmain);
+  padding: 8pt;
+  padding-left: 2;
+  transition: 100ms;
+  user-select: none;
+}
+
+.fancybutton:hover {
+  transition: 100ms;
+  background-color: var(--sur0);
+  border-style: none;
+  border-radius: 10pt;
+  
+}
+
+main{
+  display: flex;
+  color: var(--textmain);
 }
 
