@@ -1,23 +1,13 @@
 
 
 @font-face {
-    font-family: 'Mona Sans';
+    font-family: 'AppleSF';
     src:
-      url('./fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-      url('./fonts/Mona-Sans.woff2') format('woff2-variations');
+      url('./fonts/sf-pro-display_regular.woff2') format('woff2 supports variations'),
+      url('./fonts/sf-pro-display_regular.woff2') format('woff2-variations');
     font-weight: 200 900;
     font-stretch: 75% 125%;
   }
-
-@font-face {
-    font-family: 'Hubot Sans';
-    src:
-      url('./fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
-      url('./fonts/Hubot-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 500%;
-  }  
-
 
 :root {
 /*----------Catpuccin Colours!----------*/
@@ -32,7 +22,7 @@
 --crust: #11111b;
 /*--------------------------------------*/
 
-font-family: "Mona Sans";
+font-family: "AppleSF";
 
 }
 
@@ -43,18 +33,21 @@ body{
 
 }
 
+#landingpage{
+  background-image: url(/media/photos/A068808-R1-08-16A.JPG);
+}
 
 .fancybarcontainer{
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: var(--sur0);
+  backdrop-filter: blur(20px);
 }
 
 .fancybar{
   display: flex;
-  background-color: var(--base);
-  background-color: var(--base);
-  border-radius: 14pt;
+  border-radius: 20pt;
   border-style: none;
   padding-left: 8pt;
   padding-right: 8pt;
@@ -63,8 +56,10 @@ body{
 .fancybutton {
   text-decoration: none;
   color: var(--textmain);
-  padding-right: 8;
+  padding-right: 8pt;
   padding-left: 2pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
   transition: 100ms;
   user-select: none;
 }
@@ -73,7 +68,8 @@ body{
   transition: 100ms;
   background-color: var(--sur0);
   border-style: none;
-  border-radius: 10pt;
+  border-radius: 20pt;
+  padding: top 5pt; ;
 
 }
 
