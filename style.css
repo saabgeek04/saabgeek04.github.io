@@ -1,80 +1,58 @@
-
-
 @font-face {
-    font-family: 'AppleSF';
-    src:
-      url('./fonts/sf-pro-display_regular.woff2') format('woff2 supports variations'),
-      url('./fonts/sf-pro-display_regular.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-  }
+  font-family: 'AppleSF';
+  src:
+    url('./fonts/sf-pro-display_regular.woff2') format('woff2 supports variations'),
+    url('./fonts/sf-pro-display_regular.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 
 :root {
-/*----------Catpuccin Colours!----------*/
---accent0: #cba6f7;
---accent1: #bbf9af;
---textmain: #cdd6f4;
---sur2: #585b70;
---sur1: #45475a;
---sur0:#313244 ;
---base: #1e1e2e;
---mantle: #181825;
---crust: #11111b;
-/*--------------------------------------*/
+  /*----------Catpuccin Colours!----------*/
+  --accent0: #cba6f7;
+  --accent1: #bbf9af;
+  --textmain: #cdd6f4;
+  --sur2: #585b70;
+  --sur1: #45475a;
+  --sur0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+  /*--------------------------------------*/
 
-font-family: "AppleSF";
-
-}
-
-body{
-
-    background-color: var(--crust);
-    perspective: 1000px;
+  font-family: "AppleSF";
 
 }
 
-#landingpage{
+body {
+
+  background-color: var(--crust);
+
+}
+
+#landingpage {
   background-image: url(/media/photos/A068808-R1-08-16A.JPG);
 }
 
-.fancybarcontainer{
+nav {
   display: flex;
-  justify-content: center;
+  top: 0;
+  left: 0;
   width: 100%;
+
+  position: fixed;
   background-color: var(--sur0);
-  backdrop-filter: blur(20px);
+
+  align-content: center;
+  justify-content: center;
 }
 
-.fancybar{
-  display: flex;
-  border-radius: 20pt;
-  border-style: none;
-  padding-left: 8pt;
-  padding-right: 8pt;
-}
-
-.fancybutton {
-  text-decoration: none;
-  color: var(--textmain);
-  padding-right: 8pt;
-  padding-left: 2pt;
-  padding-top: 10pt;
-  padding-bottom: 10pt;
-  transition: 100ms;
+.fancybutton{
   user-select: none;
-}
-
-.fancybutton:hover {
-  transition: 100ms;
-  background-color: var(--sur0);
-  border-style: none;
-  border-radius: 20pt;
-  padding: top 5pt; ;
-
-}
-
-main{
-  display: flex;
   color: var(--textmain);
 }
 
+main {
+  display: flex;
+  color: var(--textmain);
+}
