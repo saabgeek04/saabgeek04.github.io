@@ -63,8 +63,8 @@ body{
 .fancybutton {
   text-decoration: none;
   color: var(--textmain);
-  padding: 8pt;
-  padding-left: 2;
+  padding-right: 8;
+  padding-left: 2pt;
   transition: 100ms;
   user-select: none;
 }
@@ -74,7 +74,7 @@ body{
   background-color: var(--sur0);
   border-style: none;
   border-radius: 10pt;
-  
+
 }
 
 main{
