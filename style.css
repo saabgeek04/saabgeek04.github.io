@@ -1,0 +1,36 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    perspective: 500px;
+}
+
+article{
+    display: flex;
+    align-content: center;
+    align-self: center;
+}
+
+#blah {
+    background-color: rgb(175, 143, 255);
+    padding: 5pt;
+    margin: 6pt;
+    perspective: 100px;
+}
+
+a{
+    display: block;
+    background-color: paleturquoise;
+}
+
+#cspin{
+    background-color: aquamarine;
+    transition: 1000ms;
+    padding: 5pt;
+    margin: 6pt;
+    margin-top: 100pt;
+}
+
+#cspin:hover{
+    transition: 1000ms;
+    background-color: aqua;
+    transform: rotateZ(180deg);
+}
