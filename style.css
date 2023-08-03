@@ -4,7 +4,7 @@
 }
 
 article{
-    display: flex;
+    display: block;
     align-content: center;
     align-self: center;
 }
@@ -13,12 +13,19 @@ article{
     background-color: rgb(175, 143, 255);
     padding: 5pt;
     margin: 6pt;
-    perspective: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 a{
     display: block;
     background-color: paleturquoise;
+    width: 200px;
+    height: 200px;
+    text-align: center;
 }
 
 #cspin{
@@ -32,5 +39,5 @@ a{
 #cspin:hover{
     transition: 1000ms;
     background-color: aqua;
-    transform: rotateZ(180deg);
+    transform: rotateY(180deg);
 }

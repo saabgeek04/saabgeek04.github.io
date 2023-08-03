@@ -22,14 +22,21 @@ penda.onmouseleave = unrotator;
  * @param {PointerEvent} event 
  */
 function rotator(event) {
-    let transX = event.clientX
-    let transY = event.clientY
 
-    console.log('begin trans')
+    const posbox = penda.getBoundingClientRect();
 
-    penda.style.transform = 'rotateX(' + transX + 'deg)';
-    penda.style.transform = 'rotateY(' + transY + 'deg)';
-    penda.style.transition = '100ms'
+    const relcursorX = event.clientX - posbox.x;
+    const relcursorY = event.clientY - posbox.y;
+
+    const normcurseX = relcursorX / posbox.width;
+    const normcurseY = relcursorY / posbox.height;
+
+    const Xfactor = ( normcurseX * 2 - 1 ) * 25;
+    const Yfactor = ( normcurseY * 2 - 1 ) * -25;
+    
+    penda.style.transform = 'rotateY(' + Xfactor.toString() + 'deg) rotateX(' + Yfactor.toString() + 'deg)';
+
+
 }
 
 function unrotator(event) {
