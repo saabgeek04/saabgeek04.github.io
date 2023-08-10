@@ -49,6 +49,9 @@ nav {
 
 .fancybutton{
   user-select: none;
+  display: block;
+  padding: 5pt;
+  text-decoration: none;
   color: var(--textmain);
 }
 
