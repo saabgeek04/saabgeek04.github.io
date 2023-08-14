@@ -9,15 +9,15 @@
 
 :root {
   /*----------Catpuccin Colours!----------*/
-  --accent0: #cba6f7;
+  --accent0: #04a5e5;
   --accent1: #bbf9af;
-  --textmain: #cdd6f4;
-  --sur2: #585b70;
-  --sur1: #45475a;
-  --sur0: #313244;
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
+  --textmain: #4c4f69;
+  --sur2: #acb0be;
+  --sur1: #bcc0cc;
+  --sur0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
   /*--------------------------------------*/
 
   font-family: "AppleSF";
