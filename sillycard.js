@@ -1,14 +1,8 @@
 console.log('JS started');
 
-const blah = document.querySelector('#sillycard');
+const slcard = document.querySelector('#sillycard');
 
-blah.innerHTML += '<p> Testing Text Content </p>';
-
-const penda = document.createElement('article');
-
-penda.innerHTML = ''
-penda.style.opacity = '1'
-blah.appendChild(penda)
+const penda = slcard.querySelector('div');
 
 /**
  * @param {MouseEvent} event 

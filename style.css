@@ -9,10 +9,10 @@
 
 :root {
   /*----------Catpuccin Colours!----------*/
-  --accent0: #04a5e5;
-  --accent1: #bbf9af;
+  --accent0: 04, 165, 226;
+  --accent1: 187, 249, 175;
   --textmain: #4c4f69;
-  --sur2: #acb0be;
+  --sur2: 172, 176, 190;
   --sur1: #bcc0cc;
   --sur0: #ccd0da;
   --base: #eff1f5;
@@ -27,11 +27,41 @@
 body {
 
   background-color: var(--crust);
+  min-height: 100vh;
+  display: flex;
+}
 
+article {
+  display: block;
+}
+
+#sillycardinner {
+  background-color: rgba(var(--sur2), 0.5);
+  color: var(--textmain);
+  border-color: var(--accent1);
+  border-radius: 5pt;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8pt;
+  backdrop-filter: blur(20px);
+  height: 100%;
+  
+}
+
+article#sillycard {
+  perspective: 10000px;
+  width: 70%;
+  max-width: 700px;
+  height:40%;
+  max-height: 700px;
+  display: block;
 }
 
 #landingpage {
   background-image: url(/media/photos/A068808-R1-08-16A.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -58,4 +88,8 @@ nav {
 main {
   display: flex;
   color: var(--textmain);
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
