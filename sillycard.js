@@ -17,6 +17,7 @@ penda.onmouseleave = unrotator;
 function rotator(event) {
 
     const posbox = penda.getBoundingClientRect();
+    const ramount = 10;
 
     const relcursorX = event.clientX - posbox.x;
     const relcursorY = event.clientY - posbox.y;
@@ -24,8 +25,8 @@ function rotator(event) {
     const normcurseX = relcursorX / posbox.width;
     const normcurseY = relcursorY / posbox.height;
 
-    const Xfactor = ( normcurseX * 2 - 1 ) * 30;
-    const Yfactor = ( normcurseY * 2 - 1 ) * -30;
+    const Xfactor = ( normcurseX * 2 - 1 ) * ramount;
+    const Yfactor = ( normcurseY * 2 - 1 ) * -ramount;
     
     penda.style.transform = 'rotateY(' + Xfactor.toString() + 'deg) rotateX(' + Yfactor.toString() + 'deg)';
 
