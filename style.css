@@ -30,6 +30,10 @@ body {
   min-height: 100vh;
   display: flex;
   margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
 }
 
 article {
@@ -60,12 +64,38 @@ article#sillycard {
 
 #landingpage {
   background-image: url("/media/photos/22_99h0O.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+
 }
 
+#aboutme {
+  background-image: url("/media/photos/8iM4X_Md.jpeg");
+}
+.contentcontainer{
+  display: block;
+}
+
+.content{
+  margin-top: 7vh;
+  margin-left: 5vh;
+  padding: 10px;
+  max-width: 70%; 
+  background-color: rgba(var(--sur2), 0.6);
+  color: var(--textmain);
+  border-color: var(--accent1);
+  border-radius: 5pt;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8pt;
+  backdrop-filter: blur(20px);
+  min-height: fit-content;
+  transform: 100ms ease;
+  max-height: fit-content;
+}
+
+.content:active{
+  transition: 100ms ease;
+  scale: 0.995;
+}
 nav {
   display: flex;
   top: 0;
@@ -92,7 +122,7 @@ nav {
 
 .fancybutton:hover{
   background-color: rgba(var(--sur0), 0.5);
-  
+  border-radius: 5px;
 }
 
 main {
