@@ -70,6 +70,10 @@ article#sillycard {
 #aboutme {
   background-image: url("/media/photos/8iM4X_Md.jpeg");
 }
+
+#work {
+  background-image: url("/media/photos/iN3oaXMu.jpeg");
+}
 .contentcontainer{
   display: block;
 }
