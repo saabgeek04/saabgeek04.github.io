@@ -174,4 +174,11 @@ border-radius: 10pt;
  object-fit: cover;
  width: 100%;
  height: fit-content;
+ margin-top: 42px;
 }
+
+.bspg{
+  background-color: #000000;
+}
+
+
