@@ -33,7 +33,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
+  /*backdrop-filter: blur(10px);*/
 }
 
 article {
@@ -137,3 +137,36 @@ main {
   width: 100vw;
   height: 100vh;
 }
+
+#projectspace {
+  display: flex;
+  align-content:space-around ;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectile {
+  max-width: 30vw;
+  max-height: fit-content;
+  min-height: fit-content;
+  min-height: fit-content;
+  background-color: rgba(var(--sur2), 0.6);
+  margin-top: 40pt;
+  margin-left: 14pt;
+  padding: 20pt;
+  border-radius: 10pt;
+  color: var(--textmain);
+  padding-top: 5pt;
+  text-decoration: none;
+  backdrop-filter: blur(20px);
+}
+
+.pimg {
+
+max-width: 30vw;
+max-height: 30vh;
+border-radius: 10pt;
+  
+}
+
