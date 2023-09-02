@@ -170,3 +170,8 @@ border-radius: 10pt;
   
 }
 
+.pagefiller {
+ object-fit: cover;
+ width: 100%;
+ height: fit-content;
+}
