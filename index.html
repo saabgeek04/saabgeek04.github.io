@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saabgeek04</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+    <script src="./sillycard.js" defer></script>
 </head>
 
-<body>
-<!--Navigation Bar-->
-<nav class="navbar">
-    <a class="topleftlogo">SAABGEEK04</a>
-    <a class="navbutton">Home</a>
-    <a href="gallery.html" class="navbutton">Gallery</a>
-    <a href="projects" class="navbutton">Projects</a>
-    <a href="aboutme.html" class="navbutton">About Me</a>
+<body id="landingpage">
+
+<nav class="fancybar">
+    <a class="fancybutton">Landing</a>
+    <a class="fancybutton" href="aboutme.html">About</a>
+    <a class="fancybutton" href="work.html">Work</a>
 </nav>
 
 <main>
-    <div id="content">
-        <div class="card boringcard">
-        <h1>Hello World!</h1>
-        <h2>This website is currenty under construction!</h2>
-        <p>Despite this, Enjoy your stay :)</p>
-    </div>
-    
-    <div class="card boringcard">
-        <h2>Why this website exists</h2>
-        <p>cause</p>
-    </div>
-    </div>
+    <article id="sillycard">
+        <div id="sillycardinner">
+            <h1>About me</h1>
+            <p>My name is Mitchell Jenkins, and I make cool stuff sometimes. Welcome to my website.
+            </p><p>
+            Currently I am working on building an autonomous rover using ardupilot, that will be able to deliver medical supplies long distances without being detected by radar. you can read more about that <a href="https://github.com/saabgeek04/SystemsSAC">here</a>. 
+            </p><p>
+            I don't know heaps about programming really, in fact my only javascript ever was just to make this card rotate which is super silly. 
+            </p>
+            <pre>
+      |\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_)        << cat :)
+             </pre>
+            </p>
+        </div>
+    </article>
 </main>
-    
+
 </body>
 
 </html>
