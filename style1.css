@@ -18,8 +18,39 @@
     font-stretch: 75% 125%;
   }
 
+:root {
+/* colour varibles - gruvbox dark */
+--bg: #282828;
+--gray: #928374;
+--lgray: #a89984;
+--fg: #ebdbb2;
+
+--red: #cc241d;
+--green: #98971a;
+--yellow: #d79921;
+--blue: 458588;
+--purple: #b16286;
+--aqua: #689d6a;
+--orange: #d65d0e;
+
+--lred: #fb4934;
+--lgreen: #b8bb26;
+--lyellow: #fabd2f;
+--lbue: #83a598;
+--lpurple: #d3869b;
+--laqua: #8ec07c;
+--lorange: #fe8019;
+
+}
+
+
 html{
     font-family: monospace;
     background-color: #282828;
     color: #ebdbb2;
+}
+
+#splash {
+  background-color: #83a598;
+  color: #282828;
 }
