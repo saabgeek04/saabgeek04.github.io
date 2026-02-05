@@ -57,7 +57,7 @@
 .navbar {
     display: flex;
     background-color:var(--main-accent-colour);
-    padding: 2pt;
+    padding: 5pt;
     position: fixed;
     top: 0;
     width: 100%;
@@ -65,7 +65,7 @@
   }
   
   .navbutton {
-    padding: 10pt;
+    padding: 14pt;
     display: block;
     color: #fff;
     font-family: 'Mona Sans';
@@ -102,9 +102,9 @@
     display: block;
     color: #fff;
   
-    font-weight: 800;
+    font-weight: 1000;
     font-stretch: 125%;
-    font-size: x-large;
+    font-size: 24pt;
     transition: 0.08s ease;
   }
   
@@ -219,5 +219,9 @@
     font-weight: 800;
     background-color: rgba(200, 255, 0, 0.995);
     color: #2b2939;
+  }
+
+  #hink {
+    color: rgba(200, 255, 0, 0.995)
   }
   /* big balls*/
